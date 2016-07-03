@@ -97,4 +97,7 @@ app.get('/search/:name', function(inReq, inRes){
     });
 });
 
-app.listen(8080);
+
+var port = Number(process.env.PORT || 3000);
+
+app.listen(port);
